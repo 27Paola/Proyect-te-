@@ -4,120 +4,153 @@
     font-family: 'Playfair Display', serif;
 
     font-family: 'Work Sans', sans-serif;
-*/ 
-h1{
-    font-family: 'Playfair Display', serif;
+*/
+/* desktop */
+@media (max-width:1600px){
+    h1{
+        font-family: 'Playfair Display', serif;
 
-}
-h4{
-    font-family: 'Playfair Display', serif;
-}
-p{
-    font-family: 'Work Sans', sans-serif;
-}
-/* vista uno -index*/
-/* HU01-Nav1- */
-.encabezado{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-}
-.menu {
-    display: flex;
-}
+    }
+    h4{
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+        font-family: 'Work Sans', sans-serif;
+    }
+    /* vista uno -index*/
+    /* HU01-Nav1- */
+    .encabezado{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    .menu {
+        display: flex;
+    }
 
-.opcion{
-    padding: 10px;
+    .opcion{
+        padding: 10px;
+    }
+    .logo-nav{
+        width:8%; 
+        
+    }
+
+    /* HU04-Latest Products (4tarjetas)  */
+    .latest-products{
+        background-image: url(../img/bg-1.jpg) ;
+    }
+    .caja-latest{
+        padding-bottom: 100%;
+    }
+    .text-latest{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .titulo-latest-products{
+        font-size: 40px;
+        font-weight: lighter;
+        margin-bottom: 5px;
+    }
+    .descrip{
+        font-weight: lighter;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .caja-latest{
+        padding: 15%;
+    }
+    .caja-product{
+        display: flex;
+        position: relative;
+        text-align: center;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #cccccc;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .descuento{
+        color: white;
+        display: flex;
+        border-radius: 100%;
+        background-color: #529F0F;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        justify-items: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        top: 3px;
+        margin-left: 20px;
+    }
+
+        /* HU09-Imgx5 (logos) */
+    .logos-5{
+        display: flex;
+        justify-content: space-around;
+        padding: 100px;
+        padding-left: 100px;
+        padding-top: 230px;
+    }
+    /* vistados */
+    /* HU15- Related Products (4 tarjetas */
+    .caja-related{
+        padding: 10%;
+    }
+    .titulo-related{
+        text-decoration: underline;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+
+    /* HU11-Nav2- */
+    .menu-2{
+        margin-right: -250px;
+        padding-left: 650px;
+    }
+    /* HU10- Footer- dos vistas */
+    .footer{
+        background-color: #efefef;
+        margin-bottom: -20px;
+    }
+    .list-general{
+        padding: 24px 24px 24px 24px;
+        margin: 8px 8px 8px 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        
+    }
+    ul{
+        font-size: 20px;
+        list-style: none;
+        line-height:42px;
+    }
+    .pie-pagina{
+        display: flex;
+        justify-content: space-around;
+        background-color: #e4e4e4;
+        padding-top: 15px;
+    }
+    .img-pie{
+        width: 25%; 
+        height: 90%;
+    }
 }
-.logo-nav{
-    width:8%; 
+/* mobile */
+@media (max-width:600px) {
+    .footer {
+        background-color: #c21818;
+        margin-bottom: -20px;
+    }
     
-}
-
-/* HU04-Latest Products (4tarjetas)  */
-.text-latest{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.titulo-latest-products{
-    font-size: 40px;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-.descrip{
-    font-weight: lighter;
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-.caja-latest{
-    padding: 15%;
-    
-}
-.caja-product{
-    display: flex;
-    position: relative;
-    text-align: center;
-    background-position: 50%;
-}
-
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #cccccc;
-}
-/* HU09-Imgx5 (logos) */
-.logos-5{
-    display: flex;
-    justify-content: space-around;
-    padding: 100px;
-    padding-left: 100px;
-}
-/* vistados */
-/* HU15- Related Products (4 tarjetas */
-.caja-related{
-    padding: 8%;
-}
-.titulo-related-products{
-    text-decoration: underline;
-    font-size: 40px;
-    font-weight: lighter;
-}
-
-/* HU11-Nav2- */
-.menu-2{
-    margin-right: -250px;
-    padding-left: 650px;
-}
-/* HU10- Footer- dos vistas */
-.footer{
-    background-color: #efefef;
-    margin-bottom: -20px;
-}
-.list-general{
-    padding: 24px 24px 24px 24px;
-    margin: 8px 8px 8px 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    
-}
-ul{
-    font-size: 20px;
-    list-style: none;
-    line-height:42px;
-}
-.pie-pagina{
-    display: flex;
-    justify-content: space-around;
-    background-color: #e4e4e4;
-    padding-top: 15px;
-}
-.img-pie{
-    width: 25%; 
-    height: 90%;
 }
