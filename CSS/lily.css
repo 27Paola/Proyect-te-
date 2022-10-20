@@ -49,9 +49,10 @@
     .fa-shopping-cart{
         color: #333333;
     }
-    /* .fa-bars{
-        visibility: hidden;
-    } */
+    .fa-bars{
+        color: white;
+        
+    }
 
     /* HU04-Latest Products (4tarjetas)  */
     .latest-products{
@@ -143,6 +144,12 @@
         margin-top: 50px;
         
     }
+    .logo-nav-2 {
+        width: 150px;
+        height: 40px;
+        margin-left: -200px;
+
+    }
     .menu-2{
         margin-right: 50px;
         padding-left: 650px;
@@ -150,6 +157,7 @@
     .carrito-2{
         margin-right: 100px;
     }
+   
     /* HU10- Footer- dos vistas */
     .footer{
         background-color: #efefef;
@@ -196,13 +204,21 @@
 }
 /* mobile */
 @media (max-width:600px) {
-    body{
-        overflow-x: hidden;
-    }
-    /* vista uno -index*/
+        /* vista uno -index*/
         /* HU01-Nav1- */
+    
     .logo-nav{
-        margin-left: -700px;
+        padding-left: 200px;
+    }
+    .menu {
+        visibility: hidden;
+    }
+    .carrito {
+        margin-right: -20px;
+    }
+    .fa-bars {
+        color: black;
+        padding-left: 50px;
     }
     /* HU04-Latest Products (4tarjetas)  */
     .latest-products {
@@ -210,23 +226,27 @@
         
     }
     .caja-latest {
-        padding-left: 100px;
+        padding-left: 50px;
         margin-left: -30px ;
     }
     .text-latest {
-        width: 400px;
+        width: 300px;
         
     }
     .caja-product {
-        padding-left: 50px;
+        padding-left:5px;
     }
-    .menu {
+    
+    /* HU11-Nav2- */
+    
+    .logo-nav-2{
+        padding-right: -800;
+    }
+    .menu-2 {
         visibility: hidden;
     }
-    .fa-bars{
-        color: black;
-        padding-left: 350px;
-        padding-top: 15px;
+    .carrito-2{
+        margin-left: -750px;
     }
 
     /* HU09-Imgx5 (logos) */
@@ -235,7 +255,7 @@
         visibility: hidden;
     }
     .logos-5{
-        padding-left: 500px;
+        padding-left: 380px;
         
     }
 
@@ -250,6 +270,6 @@
         padding-bottom: 30px;
     }
     .img-pie {
-        width: 400px;
+        width: 300px;
     }
 }
