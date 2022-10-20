@@ -21,33 +21,50 @@
     /* HU01-Nav1- */
     .encabezado{
         display: flex;
-        justify-content: space-around;
-        padding: 30px;
+        justify-content: space-between;
+        margin: 50px;
     }
     .menu {
         display: flex;
+        margin-left: -450px;
     }
+    
 
     .opcion{
         padding: 10px;
     }
     .logo-nav{
-        width:8%; 
+        width:150px; 
+        height: 40px;
+        margin-left: -200px;
         
     }
+    .carrito{
+        margin-right: 30px;
+        
+    }
+    .fa-chevron-down{
+        color: black;
+    }
+    .fa-shopping-cart{
+        color: #333333;
+    }
+    /* .fa-bars{
+        visibility: hidden;
+    } */
 
     /* HU04-Latest Products (4tarjetas)  */
     .latest-products{
         background-image: url(../img/bg-1.jpg) ;
+        margin: 50px;
     }
-    .caja-latest{
-        padding-bottom: 100%;
-    }
+    
     .text-latest{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         text-align: center;
+        /* padding-right: 10px; */
     }
     .titulo-latest-products{
         font-size: 40px;
@@ -60,14 +77,19 @@
         margin-bottom: 30px;
     }
     .caja-latest{
-        padding: 15%;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        padding-left: 150px;
     }
     .caja-product{
         display: flex;
         position: relative;
-        text-align: center;
+        text-align: left;
     }
-
+    .img-text{
+        padding-left: 15px;
+        color: #626161;
+    }
     .product{
         display: flex;
         flex-direction: row;
@@ -91,6 +113,7 @@
         top: 3px;
         margin-left: 20px;
     }
+    
 
         /* HU09-Imgx5 (logos) */
     .logos-5{
@@ -104,6 +127,7 @@
     /* HU15- Related Products (4 tarjetas */
     .caja-related{
         padding: 10%;
+        
     }
     .titulo-related{
         text-decoration: underline;
@@ -112,9 +136,19 @@
     }
 
     /* HU11-Nav2- */
+    .encabezado-2 {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 250px;
+        margin-top: 50px;
+        
+    }
     .menu-2{
-        margin-right: -250px;
+        margin-right: 50px;
         padding-left: 650px;
+    }
+    .carrito-2{
+        margin-right: 100px;
     }
     /* HU10- Footer- dos vistas */
     .footer{
@@ -131,26 +165,91 @@
         
     }
     ul{
-        font-size: 20px;
+        font-size: 15px;
         list-style: none;
-        line-height:42px;
+        line-height:40px;
+        color:#575757;
+    }
+    .titu{
+        font-size: 20px;
+        font-weight: lighter;
+        line-height: 50px;
+        color: black;
     }
     .pie-pagina{
         display: flex;
         justify-content: space-around;
         background-color: #e4e4e4;
-        padding-top: 15px;
+        padding-top: 5px;
     }
     .img-pie{
         width: 25%; 
         height: 90%;
+        margin-top: 15px;
+    }
+    .fa-copyright{
+        color: black;
+    }
+    .fa-heart{
+        color: red;
     }
 }
 /* mobile */
 @media (max-width:600px) {
-    .footer {
-        background-color: #c21818;
-        margin-bottom: -20px;
+    body{
+        overflow-x: hidden;
     }
-    
+    /* vista uno -index*/
+        /* HU01-Nav1- */
+    .logo-nav{
+        margin-left: -700px;
+    }
+    /* HU04-Latest Products (4tarjetas)  */
+    .latest-products {
+        margin: 20px;
+        
+    }
+    .caja-latest {
+        padding-left: 100px;
+        margin-left: -30px ;
+    }
+    .text-latest {
+        width: 400px;
+        
+    }
+    .caja-product {
+        padding-left: 50px;
+    }
+    .menu {
+        visibility: hidden;
+    }
+    .fa-bars{
+        color: black;
+        padding-left: 350px;
+        padding-top: 15px;
+    }
+
+    /* HU09-Imgx5 (logos) */
+    .mobile {
+        width: 100px;
+        visibility: hidden;
+    }
+    .logos-5{
+        padding-left: 500px;
+        
+    }
+
+/* HU10- Footer- dos vistas */
+    .list-general {
+        flex-direction: column;
+        justify-content: left;
+    }
+    .pie-pagina {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    .img-pie {
+        width: 400px;
+    }
 }

@@ -12,10 +12,12 @@
     :ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,
     600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <!--HU01-Nav1- lily-->
     <nav class="encabezado">
+        <a href="#" class="fa fa-bars"></a>
         <p class="menu">
             <span class="opcion">HOME</span>
             <span class="opcion">ABOUT</span>
@@ -24,7 +26,7 @@
             <span class="opcion">CONTACT</span>
         </p>    
         <img class="logo-nav" src="img/logo.png" alt="logo sabujcha" >
-        <p class="carrito"> usd 🛒</p>
+        <p class="carrito"> usd <a  href="#" class="fa fa-chevron-down"></a>  <a href="#" class="fa fa-shopping-cart"></a>
     </nav>
 
     <!--HU02-IMG(INICIO) PAOLA-->
@@ -34,7 +36,6 @@
     <!--HU04-Latest Products (4tarjetas) LILY-->
     <section class="latest-products">
         <div class="latest"> 
-            <!-- <img class="fondo-latest" src="img/bg-1.jpg">  -->
                 <div class="caja-latest">
                     <div class="text-latest">
                         <h1 class="titulo-latest-products">Latest Products</h1>
@@ -42,27 +43,27 @@
                     </div>
                     <br>
                     <div class="caja-product">
-                        <div class="img-text">
+                        <div >
                             <img class="product" src="img/product-1.jpg" alt="Nature Close Tea">
                                 <p class="descuento">-20%</p>
-                                <p>Nature Close Tea</p>
-                                <p><strong>$100.00 - </strong>$120.00</p>
+                                <p class="img-text">Nature Close Tea</p>
+                                <p class="img-text"><strong>$100.00 - </strong>$120.00</p>
                         </div>    
-                        <div class="img-text">
+                        <div class="mobile" >
                             <img class="product" src="img/product-2.jpg" alt="Pink wave Cup">
-                                <p>Pink wave Cup</p>
-                                <p><strong>$100.00 - </strong>$120.00</p>
+                                <p class="img-text">Pink wave Cup</p>
+                                <p class="img-text"><strong>$100.00 - </strong>$120.00</p>
                         </div>
-                        <div class="img-text">
+                        <div class="mobile">
                             <img class="product" src="img/product-3.jpg" alt="Tea And Chai">
                             <p class="descuento">-50%</p>
-                                <p>Tea And Chai</p>
-                                <p><strong>$100.00 - </strong>$120.00</p>
+                                <p class="img-text">Tea And Chai</p>
+                                <p class="img-text"><strong>$100.00 - </strong>$120.00</p>
                         </div>
-                        <div class="img-text">
+                        <div class="mobile">
                             <img class="product" src="img/product-4.jpg" alt="Pearly Everlasting">
-                                <p>Pearly Everlasting</p>
-                                <p><strong>$100.00 - </strong>$120.00</p>
+                                <p class="img-text">Pearly Everlasting</p>
+                                <p class="img-text"><strong>$100.00 - </strong>$120.00</p>
                         </div>   
                     </div>        
                 </div>
@@ -80,10 +81,10 @@
     <!--HU09-Imgx5 (logos)-lily-->
     <section class="logos-5">
         <img src="img/1.jpg">
-        <img src="img/2.jpg">
-        <img src="img/3.jpg">
-        <img src="img/4.jpg">
-        <img src="img/5.jpg">
+        <img class="mobile" src="img/2.jpg">
+        <img class="mobile" src="img/3.jpg">
+        <img class="mobile" src="img/4.jpg">
+        <img class="mobile" src="img/5.jpg">
     </section>
 
     <!--HU10- Footer-lily-->
@@ -91,7 +92,7 @@
         <div class="list-general">
             <div class="list-1">  
                 <ul>
-                    <li><span class="til-1"><strong>My Account</strong></span></li>
+                    <li><span class="titu"><strong>My Account</strong></span></li>
                     <li>My Account</li>
                     <li>Order History</li>
                     <li>WishList</li>
@@ -102,7 +103,7 @@
             </div>
             <div class="list-2">
                 <ul>
-                    <li><span class="til-2"><strong>Informacion</strong></span></li>
+                    <li><span class="titu"><strong>Informacion</strong></span></li>
                     <li>About Us</li>
                     <li>Delivery Information</li>
                     <li>Privacy Policy</li>
@@ -113,7 +114,7 @@
             </div>
             <div class="list-3">
                 <ul>
-                    <li><span class="til-3"><strong>Quick Links</strong></span></li>
+                    <li><span class="titu"><strong>Quick Links</strong></span></li>
                     <li>Support Center</li>
                     <li>Term & Conditions</li>
                     <li>Shipping</li>
@@ -124,7 +125,7 @@
             </div>
             <div class="list-4">
                 <ul>
-                    <li><span class="til-4"><strong>Contact US</strong></span></li>
+                    <li><span class="titu"><strong>Contact US</strong></span></li>
                     <li>Your address goes here</li>
                     <li></li>
                     <li>0123456789</li>
@@ -137,9 +138,10 @@
         </div>
     </footer>    
     <div class="pie-pagina">
-        <p><strong>©️ SabujCha</strong> Made With ❤️ By <strong>HasThemes.</strong></p>
+        <p><strong><a href="#" class="fa fa-copyright"></a> SabujCha</strong> Made With <a href="#" class="fa fa-heart"></a> By <strong>HasThemes.</strong></p>
         <img class="img-pie" src="img/payment.png">
     </div>
+
 
 </body>
 </html>
