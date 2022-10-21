@@ -32,6 +32,8 @@ Que cosas necesitas para instalar el software y como verla en el dispositivo loc
 
 ## Pagina 🖥
 
+para poder visualizar la vista de los productos debe darle click en el producto llamado Nature Close Tea
+
 ## Despliegue 📦
 
 El despliege esta apto para ejecutarse
